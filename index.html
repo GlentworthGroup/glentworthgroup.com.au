@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glentworth Group — Builder & Developer, Perth WA</title>
+  <meta name="description" content="Glentworth Group is a boutique Perth builder and private developer. Residential construction, construction management, and distressed projects."/>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    :root{
+      --navy:#0b1c2c;--navy2:#0e2235;--cream:#f4f2ee;--mid:#8a9baa;--light:#dde2e8;
+      --gold:#a06810;--gold2:#b8840a;
+      --sans:'Helvetica Neue',Arial,sans-serif;
+      --serif:Georgia,'Times New Roman',serif;
+    }
+    body{font-family:var(--sans);background:#fff;color:var(--navy);}
+
+    /* NAV */
+    nav{background:var(--navy);padding:22px 64px;display:flex;align-items:center;}
+
+    /* HERO */
+    .hero{background:var(--navy);padding:110px 64px 100px;position:relative;overflow:hidden;}
+    .hero-bg-dots{position:absolute;right:56px;top:40px;z-index:0;}
+    .hero-h1{font-family:var(--serif);font-size:62px;font-weight:400;font-style:italic;color:#fff;line-height:1.05;letter-spacing:-0.01em;position:relative;z-index:1;}
+    .hero-h1 em{font-style:normal;color:rgba(255,255,255,0.25);}
+    .hero-sub{font-size:14px;line-height:1.95;color:rgba(255,255,255,0.38);max-width:420px;margin-top:32px;position:relative;z-index:1;}
+
+    /* SECTION */
+    .sec{padding:88px 64px;}
+    .kicker{display:flex;align-items:center;gap:10px;margin-bottom:22px;}
+    .kicker span{font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#6a9bbf;}
+    h2{font-family:var(--serif);font-size:38px;font-weight:400;color:var(--navy);line-height:1.15;letter-spacing:-0.01em;}
+    .body-text{font-size:14px;line-height:1.95;color:#5a6d7e;margin-top:18px;max-width:520px;}
+
+    /* SERVICES */
+    .svc-list{margin-top:64px;border-top:1px solid var(--light);}
+    .svc-row{display:grid;grid-template-columns:64px 1fr 1fr;gap:0;padding:40px 0;border-bottom:1px solid var(--light);align-items:start;}
+    .svc-n{font-size:11px;letter-spacing:0.1em;color:var(--mid);padding-top:4px;}
+    .svc-title{font-family:var(--serif);font-size:26px;font-weight:400;color:var(--navy);letter-spacing:-0.01em;line-height:1.2;}
+    .svc-body{font-size:13px;line-height:1.85;color:#5a6d7e;padding-top:4px;padding-right:32px;}
+
+    /* FOOTER */
+    footer{background:#060e16;padding:32px 64px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;}
+    .footer-contact{display:flex;align-items:center;flex-wrap:wrap;}
+    .footer-name{font-family:var(--serif);font-size:14px;color:rgba(255,255,255,0.55);}
+    .footer-sep{font-size:11px;color:rgba(255,255,255,0.18);margin:0 16px;}
+    .footer-detail{font-size:11px;letter-spacing:0.04em;color:rgba(255,255,255,0.35);}
+    .footer-right{font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:rgba(255,255,255,0.18);}
+
+    /* RESPONSIVE */
+    @media(max-width:768px){
+      nav{padding:18px 28px;}
+      .hero{padding:72px 28px 64px;}
+      .hero-h1{font-size:40px;}
+      .hero-bg-dots{display:none;}
+      .sec{padding:56px 28px;}
+      h2{font-size:28px;}
+      .svc-row{grid-template-columns:40px 1fr;gap:0;}
+      .svc-title{font-size:20px;}
+      .svc-body{display:none;}
+      footer{padding:28px;flex-direction:column;align-items:flex-start;gap:12px;}
+      .footer-contact{flex-direction:column;align-items:flex-start;gap:6px;}
+      .footer-sep{display:none;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <svg width="248" height="30" viewBox="0 0 248 30" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="7.5" cy="19" r="6.5" fill="#a06810"/>
+      <circle cx="18" cy="9.5" r="4" fill="#a06810"/>
+      <circle cx="25.5" cy="2.5" r="2.3" fill="#b8840a"/>
+      <text x="36" y="21" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="15" font-weight="300" fill="white" letter-spacing="5">GLENTWORTH</text>
+      <line x1="189" y1="6" x2="189" y2="24" stroke="rgba(255,255,255,0.22)" stroke-width="0.8"/>
+      <text x="197" y="21" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="9" font-weight="300" fill="rgba(255,255,255,0.38)" letter-spacing="4">GROUP</text>
+    </svg>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <svg class="hero-bg-dots" width="160" height="120" viewBox="0 0 160 120">
+      <circle cx="50" cy="98" r="44" fill="rgba(255,255,255,0.025)"/>
+      <circle cx="108" cy="54" r="28" fill="rgba(255,255,255,0.02)"/>
+      <circle cx="148" cy="16" r="16" fill="rgba(255,255,255,0.015)"/>
+    </svg>
+    <h1 class="hero-h1">Building.<br><em>&amp;</em> Developing.<br>Properly.</h1>
+    <p class="hero-sub">A boutique Perth builder and private developer. We work on a small number of projects at any one time — and we give each one our full attention.</p>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="sec">
+    <div class="kicker">
+      <svg width="22" height="16" viewBox="0 0 22 16">
+        <circle cx="6" cy="13" r="5" fill="#a06810"/>
+        <circle cx="14" cy="7" r="3.2" fill="#a06810"/>
+        <circle cx="20" cy="2.5" r="1.8" fill="#b8840a"/>
+      </svg>
+      <span>What we do</span>
+    </div>
+    <h2>Three areas.<br>One standard.</h2>
+    <p class="body-text">Glentworth Group operates across building, development and construction management. Whatever the nature of the work, the approach is the same: considered, commercial, and executed with care.</p>
+    <div class="svc-list">
+      <div class="svc-row">
+        <div class="svc-n">01</div>
+        <div class="svc-title">Builders &amp;<br>Developers</div>
+        <p class="svc-body">New residential builds and private development projects across the Perth metro area. We develop our own sites and build for others, with the same exacting standard applied to both.</p>
+      </div>
+      <div class="svc-row">
+        <div class="svc-n">02</div>
+        <div class="svc-title">Construction<br>Management</div>
+        <p class="svc-body">Full programme and commercial management of residential and boutique development projects — from contract award through to handover.</p>
+      </div>
+      <div class="svc-row">
+        <div class="svc-n">03</div>
+        <div class="svc-title">Distressed<br>Projects</div>
+        <p class="svc-body">When a project has stalled or a build needs rescuing — we have the experience and credentials to assess the situation and find a clear path forward.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-contact">
+      <span class="footer-name">Reuben Burns</span>
+      <span class="footer-sep">|</span>
+      <span class="footer-detail">reuben@glentworthgroup.com.au</span>
+      <span class="footer-sep">|</span>
+      <span class="footer-detail">0418 744 059</span>
+    </div>
+    <span class="footer-right">© 2025 Glentworth Group Pty Ltd</span>
+  </footer>
+
+</body>
+</html>
