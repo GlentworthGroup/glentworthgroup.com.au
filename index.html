@@ -114,8 +114,17 @@
     .reveal-stagger.in-view > *:nth-child(4){transition-delay:270ms;}
     .reveal-stagger.in-view > *:nth-child(5){transition-delay:360ms;}
     .reveal-stagger.in-view > *:nth-child(6){transition-delay:450ms;}
+    /* Service titles & body text slide in from the right as the list scrolls into view */
+    .svc-title,.svc-title-dark,.svc-body,.svc-body-dark{transform:translateX(60px);opacity:0;transition:transform 950ms cubic-bezier(.2,.7,.2,1),opacity 700ms cubic-bezier(.2,.7,.2,1);will-change:transform,opacity;}
+    .reveal-stagger.in-view .svc-title,.reveal-stagger.in-view .svc-title-dark,.reveal-stagger.in-view .svc-body,.reveal-stagger.in-view .svc-body-dark{transform:none;opacity:1;}
+    .reveal-stagger.in-view .svc-item:nth-child(1) .svc-title,.reveal-stagger.in-view .svc-item:nth-child(1) .svc-title-dark,.reveal-stagger.in-view .svc-item:nth-child(1) .svc-body,.reveal-stagger.in-view .svc-item:nth-child(1) .svc-body-dark{transition-delay:60ms;}
+    .reveal-stagger.in-view .svc-item:nth-child(2) .svc-title,.reveal-stagger.in-view .svc-item:nth-child(2) .svc-title-dark,.reveal-stagger.in-view .svc-item:nth-child(2) .svc-body,.reveal-stagger.in-view .svc-item:nth-child(2) .svc-body-dark{transition-delay:150ms;}
+    .reveal-stagger.in-view .svc-item:nth-child(3) .svc-title,.reveal-stagger.in-view .svc-item:nth-child(3) .svc-title-dark,.reveal-stagger.in-view .svc-item:nth-child(3) .svc-body,.reveal-stagger.in-view .svc-item:nth-child(3) .svc-body-dark{transition-delay:240ms;}
+    .reveal-stagger.in-view .svc-item:nth-child(4) .svc-title,.reveal-stagger.in-view .svc-item:nth-child(4) .svc-title-dark,.reveal-stagger.in-view .svc-item:nth-child(4) .svc-body,.reveal-stagger.in-view .svc-item:nth-child(4) .svc-body-dark{transition-delay:330ms;}
+    .reveal-stagger.in-view .svc-item:nth-child(5) .svc-title,.reveal-stagger.in-view .svc-item:nth-child(5) .svc-title-dark,.reveal-stagger.in-view .svc-item:nth-child(5) .svc-body,.reveal-stagger.in-view .svc-item:nth-child(5) .svc-body-dark{transition-delay:420ms;}
+    .reveal-stagger.in-view .svc-item:nth-child(6) .svc-title,.reveal-stagger.in-view .svc-item:nth-child(6) .svc-title-dark,.reveal-stagger.in-view .svc-item:nth-child(6) .svc-body,.reveal-stagger.in-view .svc-item:nth-child(6) .svc-body-dark{transition-delay:510ms;}
     @media (prefers-reduced-motion: reduce){
-      .reveal,.reveal-img,.reveal-stagger > *{opacity:1 !important;transform:none !important;transition:none !important;}
+      .reveal,.reveal-img,.reveal-stagger > *,.svc-title,.svc-title-dark,.svc-body,.svc-body-dark{opacity:1 !important;transform:none !important;transition:none !important;}
     }
   </style>
 </head>
@@ -204,7 +213,7 @@
       <div>
         <div class="section-label-light">Building</div>
         <div class="section-title-light">Building</div>
-        <p class="section-body-light">As a Registered Building Practitioner in Western Australia, Glentworth Group provides a full range of building services to private clients, developers and investors. We are selective about the projects we accept and personally oversee every engagement.</p>
+        <p class="section-body-light">As a Registered Builder in Western Australia, Glentworth Group provides a full range of building services to private clients, developers and investors. We are selective about the projects we accept and personally oversee every engagement.</p>
       </div>
     </div>
     <div class="svc-list reveal-stagger">
